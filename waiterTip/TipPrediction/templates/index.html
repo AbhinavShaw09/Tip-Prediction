@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Waiter Tip Prediction</h1>
+    <hr />
+    <form action="" method="POST">
+      {% csrf_token %} Total Bill :
+      <input type="number" name="total_bill" required /><br />
+      Sex : <input type="number" name="sex" required /><br />
+      Smoker : <input type="number" name="smoker" required /><br />
+      Time : <input type="number" name="time" required /><br />
+      Tip Percentage :
+      <input type="number" name="tip_percentage" required /><br />
+      <input type="submit" />
+    </form>
+    {% if result %}
+    <h1>Tip You Should Give {{result}}</h1>
+    {% endif %}
+  </body>
+</html>
