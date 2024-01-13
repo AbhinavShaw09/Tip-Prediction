@@ -1,1 +1,1 @@
-A Basic Template for deploying ML projects using Django
+Tip prediction website where users can enter the required data to get predict the tip that needs to be given to the user
